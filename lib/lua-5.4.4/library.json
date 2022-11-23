@@ -1,0 +1,20 @@
+{
+    "name": "lua",
+    "version": "5.4.4",
+    "keywords": "lua",
+    "description": "Lua scripting engine",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/lua/lua"
+    },
+    "build": {
+        "includeDir": "./",
+        "srcDir": "./",
+        "srcFilter":[
+            "+<*.c>",
+            "-<lua.c>",
+            "-<onelua.c>"
+        ]
+    },
+    "dependencies": []
+}
